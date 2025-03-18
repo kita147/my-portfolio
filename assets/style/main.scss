@@ -100,6 +100,10 @@ a {
 }
 
 /* 共通クラス -----------------------------------------*/
+.cmn-top-pad {
+    padding-top: 8rem;
+}
+
 .title__wrapper {
     text-align: center;
     display: flex;
@@ -207,9 +211,9 @@ a {
 .header__nav-sp {
     position: fixed;
     top: 7rem;
-    right: -100vw;
-    width: 100vw;
-    padding: 0 1.6rem;
+    right: -100%;
+    width: 100%;
+    padding: 0 $pad-sp;
     background-color: $color-main;
     z-index: 1000;
     transition: right 0.3s ease;
@@ -219,29 +223,39 @@ a {
     right: 0;
 }
 
-.header__list-sp {
+.header__list {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+        column-gap: 4.8rem;
+        font-size: 2.4rem;
+        font-weight: 500;
+    }
 }
 
-/* ヘッダーの「入学説明会に申し込む」ボタン */
-.header__list-sp--left {
+.header__list-line {
     border-bottom: solid 1px rgba(255, 255, 255, 0.5);
-    padding: 1.8rem 0 1.7rem;
 }
 
-.header__list-sp--center {
-    display: flex;
-    justify-content: center;
-    padding: 3rem 0;
-}
-
-.header__nav-sp-text {
+.header__text {
     font-size: 1.8rem;
     font-weight: 500;
     color: #fff;
+    padding: 1.8rem 0;
+
+    @media (min-width: 768px) {
+        color: #333;
+        font-size: 2.4rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $color-main;
+        }
+    }
 }
-/* ハンバーガーメニューの中ここまで */
 
 /* PC表示のときはハンバーガーボタンとナビメニューを隠す */
 @media (min-width: 768px) {
@@ -253,24 +267,9 @@ a {
 
 .header__nav-pc {
     display: none;
-}
 
-@media (min-width: 768px) {
-    .header__nav-pc {
+    @media (min-width: 768px) {
         display: block;
-    }
-
-    .header__list-pc-box {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        column-gap: 4.8rem;
-        font-size: 2rem;
-        font-weight: 500;
-    }
-
-    .header__text:hover {
-        color: #0a76e2;
     }
 }
 
@@ -290,12 +289,12 @@ a {
         cursor: pointer;
         transition: color 0.3s ease, background-color 0.3s ease,
             border-color 0.3s ease;
-    }
 
-    .header__button:hover {
-        color: $color-main;
-        background-color: #fff;
-        border: 2px solid $color-main;
+        &:hover {
+            color: $color-main;
+            background-color: #fff;
+            border: 2px solid $color-main;
+        }
     }
 }
 
@@ -374,7 +373,7 @@ main {
 .btn__container {
     max-width: 39rem;
     margin: 0 auto;
-    padding: 0.9rem 1.6rem 0;
+    padding: 0 $pad-sp;
     display: flex;
     justify-content: flex-end;
     position: sticky;
@@ -397,7 +396,7 @@ main {
     width: 4rem;
     height: 4rem;
     color: #fff;
-    background-color: #0071ce;
+    background-color: $color-main;
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.5s ease, background-color 0.5s ease, border 0.3s ease;
@@ -427,17 +426,13 @@ main {
     display: inline-block;
     vertical-align: middle;
 }
-
 /* TOPへ戻るここまで------------------------------------*/
 
 /* フッターここから------------------------------------*/
-.footer {
-    height: 8rem;
+.footer__container {
     background-color: $color-main;
     color: #fff;
-}
-
-.footer__container {
+    height: 7rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
