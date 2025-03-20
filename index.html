@@ -12,7 +12,7 @@
         <meta property="og:description" content="CGとWeb制作者ハルのポートフォリオサイトです。">
         <meta property="og:type" content="article">
         <meta property="og:url" content="https://example.com">
-        <meta property="og:site_name" content="Haru-works">
+        <meta property="og:site_name" content="Haru's Portfolio">
 
         <!-- cssリセットの読み込み -->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
@@ -54,6 +54,9 @@
                             <a class="header__text" href="#works">Works</a>
                         </li>
                         <li class="header__list-line">
+                            <a class="header__text" href="service">Service</a>
+                        </li>
+                        <li class="header__list-line">
                             <a class="header__text" href="#about">About</a>
                         </li>
                         <li>
@@ -67,6 +70,7 @@
                 <nav class="header__nav-pc">
                     <ul class="header__list">
                         <li><a class="header__text" href="#works">Works</a></li>
+                        <li><a class="header__text" href="#service">Service</a></li>
                         <li><a class="header__text" href="#about">About</a></li>
                         <li>
                             <a class="header__button" href="/contact">Contact</a>
@@ -80,14 +84,15 @@
 
         <!-- メインここから -->
         <main class="main">
-            <div class="hero">
+
+            <section class="hero">
                 <div class="hero__container">
                     <div class="hero__title-wrapper">
                         <h1 class="hero__title">Haru's<br>portfolio</h1>
                         <p class="hero__title--small">web / graphic design</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <section id="works" class="works">
                 <div class="cmn__container">
@@ -146,31 +151,31 @@
                 <div class="cmn__container">
                     <div class="title__wrapper">
                         <h2 class="title--en"><span class="title__first-letter">S</span>ervice</h2>
-                        <p class="title--jp">サービス内容</p>
+                        <p class="title--jp">サービス</p>
                     </div>
 
                     <ul class="service__btn-list">
                         <li>
                             <a class="service__btn" href="/service">
-                                <p class="circle-btn__num">01<span class="circle-btn__text">コンポジット合成</span></p>
+                                <p class="service-btn__num">01<span class="service-btn__text">コンポジット合成</span></p>
                                 <div>View More</div>
                             </a>
                         </li>
                         <li>
                             <a class="service__btn" href="/service">
-                                <p class="circle-btn__num">02<span class="circle-btn__text">エフェクト制作</span></p>
+                                <p class="service-btn__num">02<span class="service-btn__text">エフェクト制作</span></p>
                                 <div>View More</div>
                             </a>
                         </li>
                         <li>
                             <a class="service__btn" href="/service">
-                                <p class="circle-btn__num">03<span class="circle-btn__text">ECサイト制作</span></p>
+                                <p class="service-btn__num">03<span class="service-btn__text">ECサイト制作</span></p>
                                 <div>View More</div>
                             </a>
                         </li>
                         <li>
                             <a class="service__btn" href="/service">
-                                <p class="circle-btn__num">04<span class="circle-btn__text">Webコーディング</span></p>
+                                <p class="service-btn__num">04<span class="service-btn__text">Webコーディング</span></p>
                                 <div>View More</div>
                             </a>
                         </li>
@@ -186,13 +191,21 @@
                         <p class="title--jp">私について</p>
                     </div>
 
+                    <div class="about__wrapper">
+                        <img class="about__photo" src="/assets/image/face_01.jpg" alt="">
+
+                        <div>
+                            <p class="about__name">Haru Kita</p>
+                            <p class="about__text">都内のTVCM制作会社にてCG映像を制作・実写映像に合成するという業務からキャリアをスタートし、フリーランスとしてアニメ / 映画 / ゲーム業界でCGやVFX映像を制作する仕事を10年ほど続けておりましたが、 コロナ禍と育児で往復4時間の都内通勤が困難だと思うようになった事を機にフリーランスとしての活動を開始しました。</p>
+                        </div>
+                    </div>
+
 
 
                 </div>
 
 
             </section>
-
 
         </main>
         <!-- メインここまで -->
@@ -207,7 +220,7 @@
         <!-- フッターここから -->
         <footer class="footer">
             <div class="footer__container">
-                <small class="footer__copy">© 2025 Haru-works All rights reserved.</small>
+                <small class="footer__copy">© 2025 Haru's Portfolio All rights reserved.</small>
             </div>
         </footer>
         <!-- フッターここまで -->

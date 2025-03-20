@@ -37,7 +37,7 @@ html {
 body {
   font-family: "Noto Serif JP", serif;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.1em;
   line-height: 1.75;
@@ -93,7 +93,7 @@ a {
 /* 共通クラス -----------------------------------------*/
 .cmn__container {
   max-width: 100%;
-  padding: 5rem 1.6rem;
+  padding: 7rem 1.6rem;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -501,21 +501,19 @@ a {
   bottom: -5rem;
 }
 
-/* Serviceサービスここから------------------------------------*/
+/* Service サービス------------------------------------*/
 .service__btn-list {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  gap: 2rem;
+  align-items: center;
+  gap: 5rem;
 }
 @media (min-width: 768px) {
   .service__btn-list {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    -moz-column-gap: 5rem;
-         column-gap: 5rem;
-    row-gap: 4rem;
   }
 }
 
@@ -541,25 +539,65 @@ a {
 }
 
 .service__btn-box {
-  /* ボタンの文字群を縦並びにする */
+  /* ボタン内の文字群を縦並びにする */
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
 }
 
-.circle-btn__num {
+.service-btn__num {
   font-size: 3rem;
   font-weight: 500;
 }
 
-.circle-btn__text {
+.service-btn__text {
   display: block;
   font-size: 2rem;
   font-weight: 600;
 }
 
-/* TOPへ戻るここから------------------------------------*/
+/* About 私について -----------------------------------------*/
+.about__wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+@media (min-width: 768px) {
+  .about__wrapper {
+    max-width: 90rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.about__photo {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .about__photo {
+    width: 23rem;
+    height: 23rem;
+    border-radius: 50%;
+  }
+}
+
+.about__name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about__text {
+  font-size: 1.4rem;
+}
+
+/* TOPへ戻るボタン------------------------------------*/
 .btn__container {
   max-width: 39rem;
   margin: 0 auto;
