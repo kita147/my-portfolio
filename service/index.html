@@ -12,7 +12,7 @@
         <meta property="og:description" content="CGとWeb制作者ハルのポートフォリオサイトです。">
         <meta property="og:type" content="article">
         <meta property="og:url" content="https://example.com">
-        <meta property="og:site_name" content="Haru-works">
+        <meta property="og:site_name" content="Haru's Portfolio">
 
         <!-- cssリセットの読み込み -->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
@@ -36,11 +36,9 @@
             <div class="header__container">
 
                 <!-- ロゴマーク -->
-                <h1>
-                    <a class="header__logo-wrapper" href="/">
-                        <img class="header__logo" src="/assets/image/logo.svg" alt="Haru-works">
-                    </a>
-                </h1>
+                <a class="header__logo-wrapper" href="/">
+                    <img class="header__logo" src="/assets/image/logo.svg" alt="Haru-works">
+                </a>
 
                 <!-- ハンバーガーメニューの3本線ボタン -->
                 <button class="hamburger" aria-label="メニュー">
@@ -53,7 +51,10 @@
                 <nav class="header__nav-sp">
                     <ul class="header__list">
                         <li class="header__list-line">
-                            <a class="header__text" href="/#works">Works</a>
+                            <a class="header__text" href="#works">Works</a>
+                        </li>
+                        <li class="header__list-line">
+                            <a class="header__text" href="service">Service</a>
                         </li>
                         <li class="header__list-line">
                             <a class="header__text" href="#about">About</a>
@@ -69,6 +70,7 @@
                 <nav class="header__nav-pc">
                     <ul class="header__list">
                         <li><a class="header__text" href="#works">Works</a></li>
+                        <li><a class="header__text" href="#service">Service</a></li>
                         <li><a class="header__text" href="#about">About</a></li>
                         <li>
                             <a class="header__button" href="/contact">Contact</a>
@@ -82,17 +84,28 @@
 
         <!-- メインここから -->
         <main class="main">
-            <div class="title__wrapper">
-                <h2 class="title--en"><span class="title__first-letter">S</span>ervice</h2>
-                <p class="title--jp">サービス詳細</p>
-            </div>
 
-            <section id="service_01" class="service_01 cmn-top-pad">
+            <section id="service" class="service">
+                <div class="cmn__container">
 
+                    <div class="title__wrapper">
+                        <h2 class="title--en"><span class="title__first-letter">S</span>ervice</h2>
+                        <p class="title--jp">サービス</p>
+                    </div>
 
+                    <ul class="service__btn-list">
 
+                        <li>
+                            <a class="service__btn" href="/service">
+                                <p class="service-btn__num">01<span class="service-btn__text">コンポジット合成</span></p>
+                                <div>View More</div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
             </section>
-
 
         </main>
         <!-- メインここまで -->

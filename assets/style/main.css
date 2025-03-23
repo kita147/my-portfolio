@@ -36,7 +36,7 @@ html {
 
 body {
   font-family: "Noto Serif JP", serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.1em;
@@ -103,6 +103,7 @@ a {
   }
 }
 
+/* TOPページのタイトル */
 .title__wrapper {
   text-align: center;
   display: flex;
@@ -119,28 +120,63 @@ a {
   font-family: "EB Garamond", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 3rem;
   letter-spacing: 0.05em;
-}
-@media (min-width: 768px) {
-  .title--en {
-    font-size: 4.5rem;
-  }
+  font-size: 4rem;
 }
 
 .title--jp {
   font-family: "Noto Serif JP", serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.6rem;
   letter-spacing: 0.05em;
+  font-size: 2rem;
   margin-bottom: 2.5rem;
 }
 @media (min-width: 768px) {
   .title--jp {
-    font-size: 2rem;
     margin-bottom: 5rem;
   }
+}
+
+/* 下線のあるタイトル */
+.sub-title__wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.sub-title__unm {
+  font-size: 3.5rem;
+  color: #46c4db;
+  margin-right: 0.8rem;
+}
+@media (min-width: 768px) {
+  .sub-title__unm {
+    font-size: 4rem;
+  }
+}
+
+.sub-title {
+  width: 100%;
+  position: relative;
+  border-bottom: solid 3px #ddd;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 0.8rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .sub-title {
+    font-size: 3rem;
+  }
+}
+
+.sub-title:after {
+  position: absolute;
+  content: "";
+  display: block;
+  border-bottom: solid 3px #46c4db;
+  bottom: -3px;
+  width: 15%;
 }
 
 /* ヘッダーここから -----------------------------------------*/
@@ -658,7 +694,7 @@ a {
 .footer__container {
   background-color: #46c4db;
   color: #fff;
-  height: 7rem;
+  height: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -670,4 +706,71 @@ a {
   font-size: 1.2rem;
 }
 
-/* フッターここまで------------------------------------*//*# sourceMappingURL=main.css.map */
+/* フッターここまで------------------------------------*/
+/* サービス詳細ページ------------------------------------*/
+.service__container {
+  max-width: 100%;
+  padding: 7rem 1.6rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .service__container {
+    max-width: 120rem;
+    padding: 10rem 10rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .service__list {
+    padding: 0 8rem;
+  }
+}
+
+.service__item {
+  padding: 5rem 0;
+}
+
+.service__box {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media (min-width: 768px) {
+  .service__box {
+    max-width: 110rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.icon-category__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.icon-category {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #21364d;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.service__image {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .service__image {
+    width: 42rem;
+    height: 28rem;
+  }
+}
+
+.service__tools {
+  margin-top: 2rem;
+}/*# sourceMappingURL=main.css.map */
