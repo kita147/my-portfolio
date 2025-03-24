@@ -192,7 +192,7 @@ a {
 }
 
 .header__container {
-  height: 7rem;
+  height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -200,7 +200,7 @@ a {
 }
 @media (min-width: 768px) {
   .header__container {
-    height: 10rem;
+    height: 7rem;
     max-width: 120rem;
     margin: 0 auto;
     padding: 0 2rem;
@@ -228,8 +228,8 @@ a {
 
 /* ハンバーガーメニューの3本線ボタン */
 .hamburger {
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6rem;
   background-color: #46c4db;
   display: flex;
   flex-direction: column;
@@ -242,7 +242,7 @@ a {
 .hamburger__line {
   display: block;
   width: 3rem;
-  height: 5px;
+  height: 3px;
   background-color: #fff;
   border-radius: 2px;
 }
@@ -290,7 +290,7 @@ a {
 }
 @media (min-width: 768px) {
   .header__text {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: #333;
     transition: color 0.3s ease;
   }
@@ -318,15 +318,13 @@ a {
 @media (min-width: 768px) {
   .header__button {
     display: inline-block;
-    width: 23rem;
-    height: 5.8rem;
-    line-height: 5.8rem;
-    /* 垂直に中央揃えする為にheightと同値にする */
-    font-size: 2.4rem;
+    line-height: 1;
+    font-size: 2rem;
     font-weight: 600;
     color: #fff;
     background-color: #46c4db;
     border-radius: 3.4rem;
+    padding: 1.2rem 3rem;
     text-align: center;
     cursor: pointer;
     transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
@@ -339,11 +337,11 @@ a {
 }
 /* メインここから -----------------------------------------*/
 .main {
-  margin-top: 7rem;
+  margin-top: 6rem;
 }
 @media (min-width: 768px) {
   .main {
-    margin-top: 10rem;
+    margin-top: 7rem;
   }
 }
 
@@ -483,8 +481,8 @@ a {
 /* 次への矢印 */
 .swiper-button-next {
   position: absolute;
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 3rem;
+  height: 3rem;
   background-image: url(../image/circle_arrow_right.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -494,8 +492,8 @@ a {
 }
 @media (min-width: 768px) {
   .swiper-button-next {
-    width: 4.8rem;
-    height: 4.8rem;
+    width: 4rem;
+    height: 4rem;
     right: -8.8rem;
   }
 }
@@ -642,7 +640,6 @@ a {
 .btn__container {
   max-width: 39rem;
   margin: 0 auto;
-  padding: 0 1.6rem;
   display: flex;
   justify-content: flex-end;
   position: sticky;
@@ -650,19 +647,18 @@ a {
   bottom: 5rem;
   z-index: 1000;
 }
-
 @media (min-width: 768px) {
   .btn__container {
     max-width: 120rem;
-    padding: 0.8rem 0 0;
   }
 }
+
 .btn__back-to-top {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   color: #fff;
   background-color: #46c4db;
   cursor: pointer;
@@ -672,7 +668,8 @@ a {
 
 @media (min-width: 768px) {
   .btn__back-to-top {
-    right: 15rem;
+    width: 4rem;
+    height: 4rem;
   }
 }
 /* ボタン表示 */
