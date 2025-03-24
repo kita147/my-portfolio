@@ -52,7 +52,7 @@ body {
     letter-spacing: 0.1em;
     line-height: 1.75;
     background-color: #fff;
-    color: #000;
+    color: #333;
 }
 
 /* boostrapのcssリセット */
@@ -285,8 +285,8 @@ a {
     padding: 1.8rem 0;
 
     @media (min-width: 768px) {
-        color: #333;
         font-size: 2.4rem;
+        color: #333;
         transition: color 0.3s ease;
 
         &:hover {
@@ -764,4 +764,38 @@ a {
 
 .service__tools {
     margin-top: 2rem;
+}
+
+/* サービス詳細ページのページネーション */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+.pagination > * + * {
+    margin-left: 1rem;
+}
+.pagination__item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 3rem;
+    height: 3rem;
+    background: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: all 0.15s linear;
+}
+.pagination__item-link-icon {
+    width: 1.5rem;
+}
+.pagination__item-link.isActive {
+    pointer-events: none;
+    background: $color-main;
+    color: #fff;
+}
+.pagination__item-link:not(.isActive):hover {
+    color: $color-main;
 }
