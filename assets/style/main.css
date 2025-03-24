@@ -213,11 +213,15 @@ a {
 
 .header__logo {
   width: 16.5rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.header__logo:hover {
   color: #46c4db;
 }
 @media (min-width: 768px) {
   .header__logo {
-    width: 24.1rem;
+    width: 24rem;
   }
 }
 
