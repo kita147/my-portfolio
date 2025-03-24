@@ -122,23 +122,24 @@ a {
 
 .title__first-letter {
     color: $color-main;
+    font-size: 4.5rem;
     font-weight: 700;
 }
 
 .title--en {
     font-family: "EB Garamond", serif;
+    font-size: 4.5rem;
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0.05em;
-    font-size: 4rem;
 }
 
 .title--jp {
     font-family: "Noto Serif JP", serif;
+    font-size: 2rem;
     font-weight: 600;
     font-style: normal;
     letter-spacing: 0.05em;
-    font-size: 2rem;
     margin-bottom: 2.5rem;
 
     @media (min-width: 768px) {
