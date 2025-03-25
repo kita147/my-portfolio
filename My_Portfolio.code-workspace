@@ -40,7 +40,8 @@
 		"javascript.validate.enable": true, // VS Code標準のJavaScript文法チェック機能を有効化
 		"editor.defaultFormatter": "vscode.typescript-language-features", // VS Codeの標準フォーマッターを使用
 		"[javascript]": {
-			"editor.tabSize": 4 // JavaScriptのインデントを4に統一
+			"editor.tabSize": 4,
+			"editor.defaultFormatter": "esbenp.prettier-vscode" // JavaScriptのインデントを4に統一
 		},
 		"window.autoDetectColorScheme": false,
 		"[scss]": {

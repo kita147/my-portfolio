@@ -30,6 +30,32 @@ html {
     scroll-padding-top: 10rem;
 }
 
+/* ページ読み込み時に全体フェードイン ---------------------------*/
+@media (prefers-reduced-motion: no-preference) {
+    body {
+        animation: fadeIn 2s ease 0s 1 normal;
+        -webkit-animation: fadeIn 2s ease 0s 1 normal;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
 /* 変数 -----------------------------------------*/
 $pad-sp: 1.6rem;
 $pad-pc-small: 2rem;
@@ -108,7 +134,7 @@ a {
 
     @media (min-width: 768px) {
         max-width: $max-pc;
-        padding: 10rem $pad-pc-small;
+        padding: 5rem $pad-pc-small 15rem;
     }
 }
 
@@ -255,7 +281,7 @@ a {
 /* SP表示のナビメニュー（ハンバーガーメニューの中）ここから */
 .header__nav-sp {
     position: fixed;
-    top: 7rem;
+    top: 6rem;
     right: -100%;
     width: 100%;
     padding: 0 $pad-sp;
@@ -327,6 +353,7 @@ a {
         color: #fff;
         background-color: $color-main;
         border-radius: 3.4rem;
+        border: 2px solid $color-main;
         padding: 1.2rem 3rem;
         text-align: center;
         cursor: pointer;
@@ -336,7 +363,6 @@ a {
         &:hover {
             color: $color-main;
             background-color: #fff;
-            border: 2px solid $color-main;
         }
     }
 }
@@ -358,13 +384,11 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    margin-bottom: 15.6rem;
+    margin-bottom: 15rem;
 
     @media (min-width: 768px) {
         height: 72rem;
         background-image: url(/assets/image/main_visual_pc.jpg);
-        margin-bottom: 0;
     }
 }
 
@@ -558,6 +582,7 @@ a {
     justify-content: center;
     gap: 2rem;
     border-radius: 50%;
+    border: 2px solid $color-main;
     background-color: $color-main;
     color: #fff;
     text-align: center;
@@ -569,7 +594,6 @@ a {
     &:hover {
         color: $color-main;
         background-color: #fff;
-        border: 2px solid $color-main;
     }
 }
 
@@ -650,20 +674,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     color: #fff;
     background-color: $color-main;
+    border: 2px solid $color-main;
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.5s ease, background-color 0.5s ease, border 0.3s ease;
-}
-
-@media (min-width: 768px) {
-    .btn__back-to-top {
-        width: 4rem;
-        height: 4rem;
-    }
 }
 
 /* ボタン表示 */
@@ -674,11 +692,10 @@ a {
 .btn__back-to-top:hover {
     color: $color-main;
     background-color: #fff;
-    border: 2px solid $color-main;
 }
 
 .icon-middle {
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 1;
     /* アイコンの上下余白をリセット */
     display: inline-block;
@@ -719,10 +736,6 @@ a {
     @media (min-width: 768px) {
         padding: 0 8rem;
     }
-}
-
-.service__item {
-    padding: 5rem 0;
 }
 
 .service__box {
@@ -773,7 +786,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 0;
+    padding: 8rem 0 0;
 }
 .pagination > * + * {
     margin-left: 1rem;

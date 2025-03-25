@@ -14,7 +14,6 @@ $(".header__nav-sp a").on("click", function () {
     $(".header__nav-sp").removeClass("active"); // header__nav-spのactiveクラスを削除
 });
 
-
 ////////// swiperの設定 //////////
 const swiper = new Swiper(".swiper", {
     loop: false,
@@ -26,8 +25,8 @@ const swiper = new Swiper(".swiper", {
     // ブレークポイントの設定とPC版のスライド数の設
     breakpoints: {
         768: {
-        slidesPerView: 3,
-        spaceBetween: 40,
+            slidesPerView: 3,
+            spaceBetween: 40,
         },
     },
 
@@ -37,7 +36,7 @@ const swiper = new Swiper(".swiper", {
         prevEl: ".swiper-button-prev",
     },
 
-  // ページネーションの設定
+    // ページネーションの設定
     pagination: {
         el: ".swiper-pagination",
         type: "bullets",
