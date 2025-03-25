@@ -30,30 +30,21 @@ html {
     scroll-padding-top: 10rem;
 }
 
-/* ページ読み込み時に全体フェードイン ---------------------------*/
-@media (prefers-reduced-motion: no-preference) {
-    body {
-        animation: fadeIn 2s ease 0s 1 normal;
-        -webkit-animation: fadeIn 2s ease 0s 1 normal;
-    }
+/* footer画面下に固定 -----------------------------------------*/
+html {
+    height: 100%;
+}
 
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
-    @-webkit-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
+footer {
+    margin-top: auto;
 }
 
 /* 変数 -----------------------------------------*/
@@ -656,17 +647,19 @@ a {
 
 /* TOPへ戻るボタン------------------------------------*/
 .btn__container {
-    max-width: 39rem;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    position: sticky;
-    left: 0;
+    position: fixed;
+    right: 0;
     bottom: 5rem;
     z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
 
     @media (min-width: 768px) {
         max-width: 120rem;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        padding-right: 0;
     }
 }
 
