@@ -110,7 +110,7 @@ a {
 /* 共通クラス -----------------------------------------*/
 .cmn__container {
   max-width: 100%;
-  padding: 7rem 1.6rem;
+  padding: 5rem 1.6rem 13rem;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -148,7 +148,7 @@ a {
   font-weight: 600;
   font-style: normal;
   letter-spacing: 0.05em;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
 }
 @media (min-width: 768px) {
   .title--jp {
@@ -179,12 +179,13 @@ a {
   border-bottom: solid 3px #ddd;
   font-size: 2.5rem;
   font-weight: 700;
-  padding-bottom: 0.8rem;
+  padding: 2rem 0 0.8rem;
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .sub-title {
     font-size: 3rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -370,7 +371,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 15rem;
+  margin-bottom: 17rem;
 }
 @media (min-width: 768px) {
   .hero {
@@ -744,7 +745,7 @@ a {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 @media (min-width: 768px) {
   .service__box {
@@ -754,10 +755,18 @@ a {
   }
 }
 
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 10rem;
+}
+
 .icon-category__wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   padding-bottom: 2rem;
 }
 
@@ -765,8 +774,8 @@ a {
   font-size: 1.2rem;
   font-weight: 600;
   color: #fff;
-  background-color: #21364d;
-  padding: 0.4rem 1rem;
+  background-color: #5dd5ab;
+  padding: 0.4rem 0.8rem;
   border-radius: 0.5rem;
 }
 
@@ -790,7 +799,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8rem 0 0;
+  padding-top: 12rem;
 }
 
 .pagination > * + * {

@@ -52,6 +52,7 @@ $pad-sp: 1.6rem;
 $pad-pc-small: 2rem;
 $pad-pc-large: 10rem;
 $color-main: #46c4db;
+$color-second: #5dd5ab;
 $color-black: #333;
 $max-pc: 120rem;
 
@@ -120,7 +121,7 @@ a {
 /* 共通クラス -----------------------------------------*/
 .cmn__container {
     max-width: 100%;
-    padding: 7rem $pad-sp;
+    padding: 5rem $pad-sp 13rem;
     margin: 0 auto;
 
     @media (min-width: 768px) {
@@ -157,7 +158,7 @@ a {
     font-weight: 600;
     font-style: normal;
     letter-spacing: 0.05em;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.5rem;
 
     @media (min-width: 768px) {
         margin-bottom: 5rem;
@@ -186,11 +187,12 @@ a {
     border-bottom: solid 3px #ddd;
     font-size: 2.5rem;
     font-weight: 700;
-    padding-bottom: 0.8rem;
+    padding: 2rem 0 0.8rem;
     margin-bottom: 2rem;
 
     @media (min-width: 768px) {
         font-size: 3rem;
+        margin-bottom: 4rem;
     }
 }
 
@@ -375,7 +377,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 15rem;
+    margin-bottom: 17rem;
 
     @media (min-width: 768px) {
         height: 72rem;
@@ -735,7 +737,7 @@ a {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 
     @media (min-width: 768px) {
         max-width: 110rem;
@@ -744,10 +746,18 @@ a {
     }
 }
 
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 10rem;
+}
+
 .icon-category__wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
     padding-bottom: 2rem;
 }
 
@@ -755,8 +765,8 @@ a {
     font-size: 1.2rem;
     font-weight: 600;
     color: #fff;
-    background-color: #21364d;
-    padding: 0.4rem 1rem;
+    background-color: $color-second;
+    padding: 0.4rem 0.8rem;
     border-radius: 0.5rem;
 }
 
@@ -779,7 +789,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8rem 0 0;
+    padding-top: 12rem;
 }
 .pagination > * + * {
     margin-left: 1rem;
